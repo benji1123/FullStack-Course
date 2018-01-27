@@ -1,6 +1,7 @@
-Context: after changing the URL of a previous repo, I could not figure out how to push new commits (I still don't).
-In an attempt to overcome this problem, I created a new repo (this one) and attempted to commit my files there...
-Still, nothing worked. I stumbled upon a Stack Overflow post, where I learned the power of "push -f", and here we are:
+A documented journey, a Fullstack adventure Web Dev... HTML, CSS, Ruby, you name it!
+This is a compilation of my projects, created as part of THE ODIN PROJECT!
 
-(1) photography-test: my first test page that used HTML, CSS, and Jacascript together. It is a quick intro to who I am and contains one of my favorite photos I took!
-(2) a similar test site to (1) that was made based off the HTML Dog begginer tutorial
+
+(1) photography-test: simple HTML/CSS; dynamic images, background; about my photography
+
+(2) htmldog: basic HTML/CSS; borders, tables, input forms; about my dog
