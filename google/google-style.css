@@ -1,0 +1,100 @@
+body {font-family: arial;}
+
+.title-link {
+	color: navy;
+	font-size: 22px;
+	margin-left: 20px;
+}
+
+.title-link:hover {
+	text-decoration: underline;
+}
+
+.mini-link {
+	color: green;
+	font-size: 15px;
+}
+
+.description {
+	color: black;
+	font-size: 15px;
+}
+
+
+/*TOOLBAR STUFF*/
+#toolbar {background: rgb(248,248,248);}
+a {text-decoration: none;}
+img {padding: 10px 10px 0px 10px;}
+
+
+input {
+	margin-left: 20px;
+	height: 35px;
+	width: 38%;
+	font-size: 20px;
+}
+
+input:hover {
+	box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+}
+
+
+#toolbar #search-buttons button {
+	margin: 20px 10px 10px 10px;
+	font-size: 15px;
+	font-weight: lighter;
+	padding: 5px 1px 5px 5px;
+	background: transparent;
+	border: none;
+	color: grey;
+}
+
+#toolbar #search-buttons button:nth-child(6)
+{margin-left: 260px;}
+#toolbar #search-buttons button:nth-child(1)
+{margin-left: 170px;}
+
+#toolbar #search-buttons button:hover {
+	color: navy;
+	font-weight: bolder;
+	text-decoration: underline;
+}
+
+
+/*Result Block*/
+#rb {
+	margin: 30px 1000px 10px 165px;
+	padding: 10px 0px 10px; 
+	
+	border-width: 1px;
+	box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+	border-color: grey;
+	border-radius: 1px;
+}
+
+#rb .mini-link {
+	color: green;
+	font-size: 15px;
+	font-weight: normal;
+	display: block;
+	white-space: nowrap;
+}
+
+#rb p {
+	font-weight: bold;
+	font-size: 18px;
+	margin-top: 20px;
+	margin-right: 250px;
+	margin-left: 20px;
+}
+
+#rb img {
+	width: 150px;
+	height: 150px;
+}
+
+#rb img {margin-left: 14px;}
+
+
+/*Results*/
+#results {margin: 0px 1000px 0px 170px;}
