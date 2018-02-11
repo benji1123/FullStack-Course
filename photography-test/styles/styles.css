@@ -46,6 +46,7 @@ li{font-size: 20px;}
 	li #bio:first-child /*pseudo element (denoted by "::")*/
 	{ /*bolds first list item*/
 		font-weight: bolder;
+		color: red
 	}
 	li #bio::first-letter{
 		font-size: 1.5em;
