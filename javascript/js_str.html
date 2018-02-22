@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>s
+<head>
+
+	<title>Strings in JavaScript</title>
+
+</head>
+
+
+
+<body>
+		//about string methods...
+
+		https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String
+
+	<script>
+
+		//hipster var names .........
+		
+		let $ = " $",
+
+		 _ = 123,
+
+		 我 = " OMG!";
+
+
+		alert("I have" + $ + _ + 我);
+
+
+
+		//constant
+
+		const HEIGHT = "5\'6";		//5 foot 6
+
+
+
+		// data types
+
+		let bool = true
+
+		 , string = "jaguar"
+
+		 , float = 123.321
+
+		 , blank = null
+
+		 , undef;
+
+		let x = typeof(undef); 		//undefined
+		alert(string.slice(0,3));
+
+
+
+		//CONCAT
+
+		let mid = 45 + "56"; 		// 4556
+		let woah = "45"/10;			// 4.5
+
+
+
+		//STRING KEY
+
+		let tiger = "woods"
+		, dist = tiger.length 				// 4 
+		, google = tiger.indexOf("o")		// 1 ;  additionally there is:  .lastIndexOf() 
+		, sword	= tiger.slice(-3);	  		// ods (last index = -1)
+		alert(sword);
+
+
+
+		//replacement  - __-
+		let lion = tiger.replace("woods","king");	//king
+
+
+
+		//lower --> UPPER
+		var asd = "dsa",
+		hype = asd.toUpperCase();					//ASD
+		alert(hype);
+
+	</script>
+
+
+	<h1> ^_^ </h1>
+
+</body>
+
+</html>
