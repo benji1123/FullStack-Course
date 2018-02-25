@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>  </title>
+</head>
+<body>
+
+	<script>
+		
+		
+
+		//.................NORMAL FUNCTION....................
+
+
+		
+		function stringify(inArray)
+		//concats elements in array + " "'s
+		{
+			var out = " ";
+			for(i=0; i<inArray.length; i++) 
+			{
+				out = out.concat(inArray[i] + " ");
+			}
+			return out;
+		}
+
+
+		alert(stringify( ['I','am','alive','and','well'] ));
+		alert(['cheat:','array.join(\' \')'].join(' ') );
+
+
+
+
+
+		//.................ANONYMOUS FUNCTION....................
+
+		/*
+		
+		function()
+		{
+			- nameless function
+			- called by event (i.e. button click)
+			- in comments bc it f***ed this program
+		}
+
+
+
+		*/
+	
+		
+		
+
+
+		//.................HOMEWORK FUNCTION....................
+
+
+		function odinHomework(num, string = "no text given :(")
+		{
+			add7 = num+77;
+			multiply = num*8;
+			capitalize = string[0].toUpperCase() + string.slice(1);
+			lastLetter = string[string.length-1];
+
+			return [add7,multiply,capitalize,lastLetter];
+		}
+
+		alert(odinHomework(78, 'benJaMin'));
+		alert(odinHomework(1));
+
+
+
+	</script>
+
+
+</body>
+</html>
