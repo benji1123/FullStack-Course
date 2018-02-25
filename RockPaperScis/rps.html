@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rock Paper Scissors 1.0</title>
+</head>
+
+
+<body>
+
+	<script>
+		
+		//GENERATE CPU MOVE
+		function cpuMove() {
+			let dice = Math.floor(Math.random()*3);
+			let move = 'ROCK';
+			if(dice==0){ move = 'PAPER'; }
+			if(dice==1){ move = 'SCISSORS';}
+			return move;
+		}
+
+
+		//PROCESS MATCH OUTCOME 
+		function fight(CPU, user){
+
+			let out = "";
+
+			//OUTCOME > CPU PLAYS SCISSORS
+			if(CPU == 'SCISSORS'){
+				switch(user){
+					case 'SCISSORS': return 'draw'; break;
+					case 'ROCK': return 'user';	break;
+					default: return 'CPU'; break;
+				}
+			}
+
+			//OUTOME > CPU PLAYS ROCK
+			if(CPU == 'ROCK'){
+				switch(user){
+					case 'SCISSORS': return 'CPU'; break;
+					case 'ROCK': return 'draw'; break;
+					default: return 'user'; break;
+				}
+			}
+
+			//OUTCOME > CPU PLAYS PAPER
+			if(CPU == 'PAPER') {
+				switch(user){
+					case 'SCISSORS': return 'user'; break;
+					case 'ROCK': return 'CPU';	break;
+					default: return 'draw'; break;
+		}}}
+
+		//RUN 5 MATCHES & GENERATE OUTCOME
+		function game()
+		{
+			let userWins = 0;
+			let cpuWins=0;
+
+			for(i=0;i<1;i++){
+
+				//GET CPU AND USER'S MOVE
+				let CPU = cpuMove();
+				let user = prompt('Rock (R) || Paper (P) || Scissors (S)').toUpperCase();
+				
+				//PROCESS RESULT
+				let out = fight(CPU, user);
+				let msg="";
+
+				//PRINT MATCH RESULT
+				switch(out)
+				{
+					case 'draw':msg= "Draw! CPU ALSO used "+CPU; break;
+					case 'user':msg='Victory! '+user+" beats "+CPU;break;
+					case 'CPU':msg= "LOSS! "+CPU+" beats "+user;break;
+				}
+				alert(msg);
+
+				//UPDATE SCORE
+				if(out=='user'){userWins=userWins+1;}
+				if(out=='CPU'){cpuWins=cpuWins+1;}
+			}
+
+			//OUTPUT GAME SCORE
+			let warMsg = "HUMANS: "+userWins+"\nCPU: "+cpuWins;
+			alert(warMsg);
+
+			//OUTPUT GAME RESULT
+			if(userWins>cpuWins){
+				return "OMG OMG OMG THE HUMAN WINS";
+			}
+			else if(userWins == cpuWins){
+				return "EQUALITY! NEITHER IS BETTER, HUMANS = COMPUTER!";
+			}
+			return "YOU LOST... HUMANS WILL BE ENSLAVED BY COMPUTERS";
+		}
+
+		//INSTANTIATE GAME
+		let war = game();
+		alert(war);
+		
+	</script>
+</body>
+</html>
