@@ -10,17 +10,20 @@
 	<script>
 		
 		//GENERATE CPU MOVE
-		function cpuMove() {
+		function generateCpuMove() {
+
 			let dice = Math.floor(Math.random()*3);
 			let move = 'ROCK';
+
 			if(dice==0){ move = 'PAPER'; }
 			if(dice==1){ move = 'SCISSORS';}
+
 			return move;
 		}
 
 
 		//PROCESS MATCH OUTCOME 
-		function fight(CPU, user){
+		function fight(CPU, user) {
 
 			let out = "";
 
@@ -51,52 +54,54 @@
 		}}}
 
 		//RUN 5 MATCHES & GENERATE OUTCOME
-		function game()
-		{
-			let userWins = 0;
-			let cpuWins=0;
+		function playGame() {
 
-			for(i=0;i<1;i++){
+			let userWinCount = 0;
+			let cpuWinCount =0;
+
+
+			//PLAY 3 GAMES
+			for(i=0;i<3;i++){
 
 				//GET CPU AND USER'S MOVE
-				let CPU = cpuMove();
+				let CPU = generateCpuMove();
 				let user = prompt('Rock (R) || Paper (P) || Scissors (S)').toUpperCase();
 				
 				//PROCESS RESULT
-				let out = fight(CPU, user);
-				let msg="";
+				let matchResult = fight(CPU, user);
+				let matchMsg="";
 
 				//PRINT MATCH RESULT
-				switch(out)
+				switch(matchResult)
 				{
-					case 'draw':msg= "Draw! CPU ALSO used "+CPU; break;
-					case 'user':msg='Victory! '+user+" beats "+CPU;break;
-					case 'CPU':msg= "LOSS! "+CPU+" beats "+user;break;
+					case 'draw':matchMsg= "Draw! CPU ALSO used "+CPU; break;
+					case 'user':matchMsg='Victory! '+user+" beats "+CPU;break;
+					case 'CPU':matchMsg= "LOSS! "+CPU+" beats "+user;break;
 				}
-				alert(msg);
+				alert(matchMsg);
 
-				//UPDATE SCORE
-				if(out=='user'){userWins=userWins+1;}
-				if(out=='CPU'){cpuWins=cpuWins+1;}
+				//UPDATE SCORE 
+				if(matchResult=='user'){userWinCount +=1;}
+				if(matchResult=='CPU'){cpuWinCount +=1;}
 			}
 
 			//OUTPUT GAME SCORE
-			let warMsg = "HUMANS: "+userWins+"\nCPU: "+cpuWins;
-			alert(warMsg);
+			let scoreMsg = "HUMANS: "+userWinCount+"\nCPU: "+cpuWinCount;
+			alert(scoreMsg);
 
 			//OUTPUT GAME RESULT
-			if(userWins>cpuWins){
+			if(userWinCount>cpuWinCount){
 				return "OMG OMG OMG THE HUMAN WINS";
 			}
-			else if(userWins == cpuWins){
+			else if(userWinCount == cpuWinCount){
 				return "EQUALITY! NEITHER IS BETTER, HUMANS = COMPUTER!";
 			}
 			return "YOU LOST... HUMANS WILL BE ENSLAVED BY COMPUTERS";
 		}
 
 		//INSTANTIATE GAME
-		let war = game();
-		alert(war);
+		let gameResult = playGame();
+		alert(gameResult);
 		
 	</script>
 </body>
