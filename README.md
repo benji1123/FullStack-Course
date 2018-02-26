@@ -1,7 +1,7 @@
 A Fullstack adventure in Web Dev... 
 
 
-<strong>(1) photography-test | htmldog | HTML/CSS: </strong>
+<strong>(1) photography-test & htmldog | HTML/CSS: </strong>
 dynamic images, background; on-hover events
 
 
