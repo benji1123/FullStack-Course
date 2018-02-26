@@ -1,6 +1,19 @@
-A Fullstack adventure in Web Dev... HTML, CSS, Ruby, and more (just those 3 actually for now)!
-Indeed, this is a compilation of my learning process - created as part of THE ODIN PROJECT!
+# PROJECTS
+Curriculum: [The Odin Project](https://www.theodinproject.com/dashboard)
+
+## Front End
+#### <strong>1 | htmldog</strong>
+01.21.2018 : Basic webpage (images, on-hover events, etc.)
+
+#### <strong>2 | Google Results </strong>
+02.10.2018 : Custom designed Google Search Results page
+
+## JavaScript Basics
+
+#### <strong>1 | js.x</strong>
+02.22.2018 : Examples of classes, functions, & syntax
 
 
-(1) photography-test: simple HTML/CSS; dynamic images, background; about my photography
-(2) htmldog: basic HTML/CSS; borders, tables, input forms; about my dog
+#### <strong>2 | RockPaperScis </strong> 
+02.25.2018 : Player vs. CPU Game (rock paper scissors)
+
