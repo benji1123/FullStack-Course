@@ -9,7 +9,7 @@ dynamic images, background; on-hover events
 #### <strong>HTML/CSS | Google Results </strong>
 custom Google Search Results page
 
-##JavaScript Basics
+## JavaScript Basics
 
 #### <strong>JS | js.x</strong>
 Javascript theory; syntax; classes; functions
