@@ -2,18 +2,18 @@
 Curriculum: [The Odin Project](https://www.theodinproject.com/dashboard)
 
 ## Front End
-#### <strong>CSS | htmldog</strong>
+#### <strong>1 | htmldog</strong>
 dynamic images, background; on-hover events
 
-#### <strong>HTML/CSS | Google Results </strong>
+#### <strong>2 | Google Results </strong>
 custom Google Search Results page
 
 ## JavaScript Basics
 
-#### <strong>JS | js.x</strong>
+#### <strong>1 | js.x</strong>
 Javascript theory; syntax; classes; functions
 
 
-#### <strong>JS | RockPaperScis</strong> 
+#### <strong>2 | RockPaperScis</strong> 
 Player vs. CPU RPS (rock paper scissors) game 
 
