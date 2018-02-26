@@ -7,7 +7,7 @@ HTML/CSS ~ dynamic images, background; on-hover events
 
 
 
-(2) Google Homepage : 
+<strong>(2) Google Homepage : </strong>
 
 HTML/CSS ~ custom Google Search Results page
 
