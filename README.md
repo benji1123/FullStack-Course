@@ -2,7 +2,7 @@
 Curriculum: [The Odin Project](https://www.theodinproject.com/dashboard)
 
 
-###### <strong>CSS | htmldog </strong>
+###### ** <strong>CSS | htmldog </strong> **
 dynamic images, background; on-hover events
 
 
