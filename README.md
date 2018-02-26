@@ -1,4 +1,7 @@
-###### ............ A Fullstack Web Development coding adventure............ 
+## ............ A Fullstack Web Development coding adventure............
+
+# SUMMARY OF PROJECTS
+
 <br><br>
 
 ## <strong>HTML/CSS | htmldog </strong>
