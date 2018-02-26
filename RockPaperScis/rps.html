@@ -21,7 +21,6 @@
 			return move;
 		}
 
-
 		//PROCESS MATCH OUTCOME 
 		function fight(CPU, user) {
 
@@ -59,7 +58,6 @@
 			let userWinCount = 0;
 			let cpuWinCount =0;
 
-
 			//PLAY 3 GAMES
 			for(i=0;i<3;i++){
 
@@ -72,8 +70,7 @@
 				let matchMsg="";
 
 				//PRINT MATCH RESULT
-				switch(matchResult)
-				{
+				switch(matchResult) {
 					case 'draw':matchMsg= "Draw! CPU ALSO used "+CPU; break;
 					case 'user':matchMsg='Victory! '+user+" beats "+CPU;break;
 					case 'CPU':matchMsg= "LOSS! "+CPU+" beats "+user;break;
