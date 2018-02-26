@@ -1,8 +1,7 @@
 A Fullstack adventure in Web Dev... 
 
 
-<strong>htmldog | HTML/CSS: </strong>
-dynamic images, background; on-hover events
+<strong>htmldog | HTML/CSS: </strong>\ndynamic images, background; on-hover events
 
 
 
