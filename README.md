@@ -1,9 +1,9 @@
 # SUMMARY OF PROJECTS
-Full Stack Course: [The Odin Project](https://www.theodinproject.com/dashboard)
+Curriculum: [The Odin Project](https://www.theodinproject.com/dashboard)
 
 <br>
 
-## <strong>HTML/CSS | htmldog </strong>
+## <strong>CSS | htmldog </strong>
 <br>dynamic images, background; on-hover events
 
 
