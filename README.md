@@ -1,7 +1,7 @@
 ............ A Fullstack Web Development coding adventure............ 
 <br><br>
 
-<strong>HTML/CSS | htmldog </strong>
+<font face='Helvetica' size='19'><strong>HTML/CSS | htmldog </strong></font>
 <br>dynamic images, background; on-hover events
 
 
