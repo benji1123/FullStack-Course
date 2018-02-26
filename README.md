@@ -1,6 +1,7 @@
-## ............ A Fullstack Web Development coding adventure............
-
 # SUMMARY OF PROJECTS
+## A Fullstack Web Development coding adventure
+[The Odin Project](https://www.theodinproject.com/dashboard)
+
 
 <br><br>
 
