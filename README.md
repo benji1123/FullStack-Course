@@ -3,7 +3,7 @@ Curriculum: [The Odin Project](https://www.theodinproject.com/dashboard)
 
 ## Front End
 #### <strong>1 | htmldog</strong>
-Examples of images, background; on-hover events (synthesized into webpage)
+Basic webpage (images, on-hover events, etc.)
 
 #### <strong>2 | Google Results </strong>
 Custom designed Google Search Results page
