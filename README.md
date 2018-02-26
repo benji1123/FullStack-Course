@@ -1,20 +1,21 @@
 A Fullstack adventure in Web Dev... 
 
 
-<strong>htmldog | HTML/CSS: </strong>\ndynamic images, background; on-hover events
+<strong>HTML/CSS | htmldog </strong>
+<br>dynamic images, background; on-hover events
 
 
 
-<strong>Google Results | HTML/CSS : </strong>
-custom Google Search Results page
+<strong>HTML/CSS | Google Results </strong>
+<br>custom Google Search Results page
 
 
 
-<strong>js.x | JavaScript</strong>
-Javascript theory; syntax; classes; functions
+<strong>JavaScript | js.x</strong>
+<br>Javascript theory; syntax; classes; functions
 
 
 
-<strong>RockPaperScis | JavaScript</strong>
-Player vs. CPU RPS (rock paper scissors) game 
+<strong>JavaScript | RockPaperScis</strong>
+<br>Player vs. CPU RPS (rock paper scissors) game 
 
