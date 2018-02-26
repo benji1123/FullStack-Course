@@ -4,17 +4,17 @@ Curriculum: [The Odin Project](https://www.theodinproject.com/dashboard)
 <br>
 
 ## <strong>CSS | htmldog </strong>
-<br>dynamic images, background; on-hover events
+dynamic images, background; on-hover events
 
 
 ## <strong>HTML/CSS | Google Results </strong>
-<br>custom Google Search Results page
+custom Google Search Results page
 
 
 ## <strong>JS | js.x</strong>
-<br>Javascript theory; syntax; classes; functions
+Javascript theory; syntax; classes; functions
 
 
 ## <strong>JS | RockPaperScis</strong>
-<br>Player vs. CPU RPS (rock paper scissors) game 
+Player vs. CPU RPS (rock paper scissors) game 
 
