@@ -11,11 +11,11 @@ A Fullstack adventure in Web Dev...
 
 
 
-<strong>JavaScript | js.x</strong>
+<strong>JS | js.x</strong>
 <br>Javascript theory; syntax; classes; functions
 
 
 
-<strong>JavaScript | RockPaperScis</strong>
+<strong>JS | RockPaperScis</strong>
 <br>Player vs. CPU RPS (rock paper scissors) game 
 
