@@ -1,24 +1,20 @@
 # SUMMARY OF PROJECTS
 Full Stack Course: [The Odin Project](https://www.theodinproject.com/dashboard)
 
-
-<br><br>
+<br>
 
 ## <strong>HTML/CSS | htmldog </strong>
-> <br>dynamic images, background; on-hover events
-
+<br>dynamic images, background; on-hover events
 
 
 ## <strong>HTML/CSS | Google Results </strong>
-> <br>custom Google Search Results page
- 
+<br>custom Google Search Results page
 
 
 ## <strong>JS | js.x</strong>
-> <br>Javascript theory; syntax; classes; functions
-
+<br>Javascript theory; syntax; classes; functions
 
 
 ## <strong>JS | RockPaperScis</strong>
-> <br>Player vs. CPU RPS (rock paper scissors) game 
+<br>Player vs. CPU RPS (rock paper scissors) game 
 
