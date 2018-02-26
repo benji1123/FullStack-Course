@@ -14,6 +14,6 @@ Custom designed Google Search Results page
 Examples of classes, functions, & syntax
 
 
-#### <strong>2 | RockPaperScis</strong> 
+#### <strong>2 | RockPaperScis | 02/25/2018</strong> 
 Player vs. CPU Game (rock paper scissors)
 
