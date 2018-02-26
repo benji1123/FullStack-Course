@@ -1,5 +1,5 @@
 ............ A Fullstack Web Development coding adventure............ 
-<br>
+<br><br>
 
 <strong>HTML/CSS | htmldog </strong>
 <br>dynamic images, background; on-hover events
