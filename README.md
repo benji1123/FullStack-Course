@@ -15,6 +15,5 @@ Examples of classes, functions, & syntax
 
 
 #### <strong>2 | RockPaperScis </strong> 
-02.25.2018
-Player vs. CPU Game (rock paper scissors)
+02/25/2018: Player vs. CPU Game (rock paper scissors)
 
