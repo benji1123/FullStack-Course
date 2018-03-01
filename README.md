@@ -2,8 +2,8 @@
 Curriculum: [The Odin Project](https://www.theodinproject.com/dashboard)
 
 ### TO-DO
-[ ] Install Ubuntu Dual-Boot
-[ ] Write test files for JS Functions
+- [ ] Install Ubuntu Dual-Boot
+- [ ] Write test files for JS Functions
 
 ## Front End
 #### <strong>1 | htmldog</strong>
