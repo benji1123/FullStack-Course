@@ -1,6 +1,10 @@
 # PROJECTS
 Curriculum: [The Odin Project](https://www.theodinproject.com/dashboard)
 
+### TO-DO
+[  ] Install Ubuntu Dual-Boot
+[  ] Write test files for JS Functions
+
 ## Front End
 #### <strong>1 | htmldog</strong>
 01.21.2018 : Basic webpage (images, on-hover events, etc.)
