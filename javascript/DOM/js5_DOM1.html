@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	<h1 id ="title">THE TITLE</h1>
+	<div id = "container"></div>
+
+	<script>
+	    
+	    // INSTANTIATING NODE
+		  
+		  // 1 - create NODE 
+		  const content = document.createElement('div')
+
+		
+		// DEFINE CLASS ATTRIBUTES of NODE
+		  
+		  content.classList.add('content'); // add class
+		  content.textContent = 'The glorious text content! ;)'; // words!
+
+
+		// ADD node to DOM
+		
+		  const container = document.querySelector('#container'); // container
+		  container.appendChild(content); // done !
+		
+		// Make Colors
+
+		  content.style.color = 'purple';
+		  document.querySelector("#title").style.color = 'orange';
+
+
+
+// ADD more ELEMENTS
+	
+		// PARAGRAPH
+		const red = document.createElement('p');
+		  red.textContent = 'I\'m a paragraph, human :)';
+		  red.style.color = 'red';
+
+		// DIV 
+		const black = document.createElement('div');
+		  
+		  var h1Black = document.createElement('h1');
+		  	h1Black.textContent='black bro';
+		  	black.appendChild(h1Black);
+
+		  var pBlack = document.createElement('p');
+		  	pBlack.textContent='parachute';
+		    black.appendChild(pBlack);
+
+		container.append(red, black);
+
+	</script>
+</body>
+</html>

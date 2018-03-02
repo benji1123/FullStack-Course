@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Array & Document Access</title>
+</head>
+<body>
+
+	<!--displ JavaScript elements-->
+	<h2>Car Array</h2>
+	<p id = "demo"></p>
+	<p id = "man"></p>
+
+	<script>
+
+	//BASICS of ARRAYS..................
+
+		//LIST as array[]
+		let cars = ['mustang',' vanquish',' 911'];
+		document.getElementById("demo").innerHTML = cars; //ref id = "cars" for html
+
+		//OBJ as array{}
+		let person = {firstName: 'Ben', lastName: 'Li', age:18}
+		document.getElementById("man").innerHTML = person.firstName; //ref id = "man" for html
+
+
+	//FUNCTIONS of array.................
+		
+		cars.sort();					// sort
+		cars.length;					// get array length
+		cars.push('explorer')			// add el
+		let str = cars.tostring();		// comma'd string
+		let str2 = cars.join();			// join as string 
+
+
+		//MORE FUNCTIONS of ARRAY
+		cars.pop();									// element deletion
+		cars.shift();								// shift el position
+		cars.splice(2,0, "Focus","Shelby");			// insertion
+		cars.concat(array2);						// combine 2 arrays
+		cars.slice(1);								// create partial-array 
+
+
+	
+	
+
+	</script>
+
+
+
+</body>
+</html>
