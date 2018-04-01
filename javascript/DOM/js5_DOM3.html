@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DOM3 (parameters)</title>
+</head>
+<body>
+
+	<div id='container'>
+		<!--get all 3 btns as nodelist (type as select)-->
+		<button id="btn1">click me</button>
+		<button id="btn2">clock me</button>
+		<button id="btn3">cluck me</button>
+
+	</div>
+
+	<script>
+		
+		// select buttons in nodelist
+		const buttons = document.querySelectorAll('button');
+
+		//iterate through each button in nodelist 
+		buttons.forEach((button) => {
+
+			// click listener is added to each button in nodelist
+			button.addEventListener('click', (e) => { //"e" gives reference to node's id
+				alert(button.id); //output id on click (id referenced through "(e)"
+			});
+		});
+
+
+	</script>
+
+</body>
+</html>

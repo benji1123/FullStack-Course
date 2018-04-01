@@ -24,6 +24,7 @@
 
 		// ADD node to DOM
 		
+		//create container OBJECT to reference in javascrpt
 		  const container = document.querySelector('#container'); // container
 		  container.appendChild(content); // done !
 		
@@ -36,23 +37,23 @@
 
 // ADD more ELEMENTS
 	
-		// PARAGRAPH
+		// element creation in JS
 		const red = document.createElement('p');
-		  red.textContent = 'I\'m a paragraph, human :)';
-		  red.style.color = 'red';
-
-		// DIV 
 		const black = document.createElement('div');
-		  
-		  var h1Black = document.createElement('h1');
-		  	h1Black.textContent='black bro';
-		  	black.appendChild(h1Black);
 
-		  var pBlack = document.createElement('p');
-		  	pBlack.textContent='parachute';
-		    black.appendChild(pBlack);
+			const pBlack = document.createElement('p');
+			const h1Black = document.createElement('h1');
 
-		container.append(red, black);
+		// element styling
+		red.textContent = "red", red.style.color = "red";
+		h1Black.textContent='black', h1Black.style.color='black';
+		pBlack.textContent='p black', pBlack.style.color='purple';
+
+		// append elements to DOM
+		 // append children to black div
+		 black.appendChild(pBlack, h1Black);
+		 container.append(red, black);
+
 
 	</script>
 </body>
