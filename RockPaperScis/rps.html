@@ -2,8 +2,27 @@
 <html>
 <head>
 	<title>Rock Paper Scissors 1.0</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
+
+	<h1>R, P, or S?</h1>
+
+
+	<div class='buttons'>
+		<button class='but' id="rock">ROCK</button>
+		<button class='but' id="paper">PAPER</button>
+		<button class='but' id="scissors">SCISSORS</button>
+	</div>
+
+	<br><br><br>
+	<h2>YOUR GAMES...</h2>
+	<ol id='history'>
+
+	</ol>
+
+
+
 	<script>
 		
 		//GENERATE CPU MOVE
@@ -49,18 +68,15 @@
 					default: return 'draw'; break;
 		}}}
 
-		//RUN 5 MATCHES & GENERATE OUTCOME
-		function playGame() {
+		//RUN GAME
+		function playGame(user) {
 
 			let userWinCount = 0;
 			let cpuWinCount =0;
 
-			//PLAY 3 GAMES
-			for(i=0;i<3;i++){
-
 				//GET CPU AND USER'S MOVE
 				let CPU = generateCpuMove();
-				let user = prompt('Rock (R) || Paper (P) || Scissors (S)').toUpperCase();
+				//let user = prompt('Rock (R) || Paper (P) || Scissors (S)').toUpperCase();
 				
 				//PROCESS RESULT
 				let matchResult = fight(CPU, user);
@@ -74,27 +90,18 @@
 				}
 				alert(matchMsg);
 
-				//UPDATE SCORE 
-				if(matchResult=='user'){userWinCount +=1;}
-				if(matchResult=='CPU'){cpuWinCount +=1;}
-			}
+				//add game to history
+				var history = document.getElementById('history');
+				const game = document.createElement('li');
+				game.textContent = matchMsg;
+				history.appendChild(game);
 
-			//OUTPUT GAME SCORE
-			let scoreMsg = "HUMANS: "+userWinCount+"\nCPU: "+cpuWinCount;
-			alert(scoreMsg);
-
-			//OUTPUT GAME RESULT
-			if(userWinCount>cpuWinCount){
-				return "OMG OMG OMG THE HUMAN WINS";
-			}
-			else if(userWinCount == cpuWinCount){
-				return "EQUALITY! NEITHER IS BETTER, HUMANS = COMPUTER!";
-			}
-			return "YOU LOST... HUMANS WILL BE ENSLAVED BY COMPUTERS";
 		}
 
-		//INSTANTIATE GAME
-		let gameResult = playGame();
+		//INSTANTIATE GAME on BUTTON PRESS
+		document.getElementById('rock').onclick =()=> playGame('ROCK');
+		document.getElementById('paper').onclick =()=> playGame('PAPER');
+		document.getElementById('scissors').onclick =()=> playGame('SCISSORS');
 		alert(gameResult);
 		
 	</script>
