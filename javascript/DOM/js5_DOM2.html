@@ -5,8 +5,10 @@
 </head>
 <body>
 
-<!-- I don't want to write JS -->
-	<button onclick = "alert('sup!')">Button 1</button>
+<!-- THERE ARE 3 WAYS TO CREATE ACTIONS: (1) inline (2) single event (3) multi event --!>
+
+<!-- writing inline javascript -->
+	<button onclick="alert('BUTTON!')">Click Me</button>
 
 <!-- get the JS out! -->
 	<button id = "btn2">Button 2</button>
@@ -34,12 +36,11 @@
 		 btn2b.onclick = alertFunction;
 
 
-		// I might want more than one event action
+		// I want more than one event action
 		var btn3 = document.querySelector('#btn3');
 		 btn.addEventListener('click', () => {
 			 alert('Sup Again Boy');
-			//ALTERNATIVE (RE-USABLE FUNCTION)
-			//$ btn.addEventListener('click', alertFunction);
+			//more event actions can be written in this {block}
 		});
 
 		var btn4 = document.querySelector('#btn4')

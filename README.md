@@ -16,6 +16,7 @@ Curriculum: [The Odin Project](https://www.theodinproject.com/dashboard)
 
 #### <strong>1 | js.x</strong>
 02.22.2018 : Examples of classes, functions, & syntax
+03.02.2018 : DOM alteration
 
 
 #### <strong>2 | RockPaperScis </strong> 
