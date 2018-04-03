@@ -21,4 +21,9 @@ Curriculum: [The Odin Project](https://www.theodinproject.com/dashboard)
 
 #### <strong>2 | RockPaperScis </strong> 
 02.25.2018 : Player vs. CPU Game (rock paper scissors)
+04.04.2018 : Added UI and button interaction
+
+
+#### <strong>2 | DrumKit </strong> 
+04.02.2018 : Keyboard Activated Sound Machine Web App
 
