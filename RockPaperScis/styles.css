@@ -29,7 +29,8 @@ ol{
 	border: 1px;
 	border-radius: 30px;
 	border-color: purple;
-	color: blue;
+	color: aqua;
+	background: black;
 	opacity: 1;
 
 	font-family: Helvetica;
@@ -42,4 +43,5 @@ ol{
 
 html {
 	margin: 20px;
+	background: lightgrey;
 }
