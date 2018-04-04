@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Sketch by Etch</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+
+<body>
+
+	<h1>blue</h1>
+	<div id="container"></div>
+
+	<script>
+		
+		var container = document.getElementById('container');
+		var size = 30;
+
+		for(j=0; j < size; j++) {
+		//The grid has 16 rows	
+			var row = document.createElement('div');
+			row.classList.add("row");
+
+
+			for(i=0; i<size; i++) {
+			//each row has 16 squares
+				var square = document.createElement('div')
+				square.classList.add("square");
+				row.appendChild(square);
+			}
+			container.append(row);
+		}
+
+	</script>
+
+</body>
+</html>

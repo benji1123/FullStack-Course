@@ -1,0 +1,29 @@
+html{
+	background: grey;
+}
+
+.square {
+	border: 0.5px solid purple;
+	padding: 15px;
+}
+
+.row
+{
+	justify-content: center;
+	border: none;
+	display: flex;
+	flex-direction: row;
+}
+
+#container
+{
+	justify-content: center;
+	display: flex;
+	flex-direction: column;
+}
+
+h1{
+	color: purple;
+	font-size: 100px;
+	text-transform: uppercase;
+}
