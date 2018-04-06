@@ -6,31 +6,57 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
-
 <body>
 
-	<h1>blue</h1>
+	<h1 id='key'>R = Rainbow, C = Clear</h1> <br>
+
 	<div id="container"></div>
 
 	<script>
 		
+		//GRID CREATION (30x30)
 		var container = document.getElementById('container');
-		var size = 30;
+		var size = prompt('100');
 
+		//Row Creation (30)
 		for(j=0; j < size; j++) {
-		//The grid has 16 rows	
 			var row = document.createElement('div');
 			row.classList.add("row");
 
-
+			//Square Creation (30 per Row)
 			for(i=0; i<size; i++) {
-			//each row has 16 squares
-				var square = document.createElement('div')
+				let square = document.createElement('div')
 				square.classList.add("square");
+
+				//div background-color changes on mouse-enter 	
+				square.addEventListener('mouseenter', () => { 
+					square.style.background = '#'+(Math.random()*0xFFFFFF<<0).toString(16);
+				});
+
 				row.appendChild(square);
 			}
 			container.append(row);
 		}
+
+
+		//KEY COMMANDS
+		window.addEventListener('keydown', function(e) {
+
+			let squares = document.getElementsByClassName('square');
+			let len = squares.length;
+
+			if(e.keyCode == 82) {
+				for(let i=0; i<len; i++) {
+					squares[i].style.background = '#'+(Math.random()*0xFFFFFF<<0).toString(16);
+				}
+			}
+			else if(e.keyCode == 67) {
+				for(let i=0; i<len; i++) {
+					squares[i].style.background = 'black';
+				}
+			}
+		});
+
 
 	</script>
 
