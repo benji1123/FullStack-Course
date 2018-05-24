@@ -1,11 +1,11 @@
 //SOURCE: http://javascript.info/object
 
 
-//CREATING AN OBJECT
+//CREATING AN Independent OBJECT (no classes in JS)
 function object() {
 	let person = new Object()
 
-	//create object "properties"
+	//create object called "person" with proprties: name, age, city, etc.
 	person = {
 		name: "Yigga",
 		age: 19,
@@ -29,6 +29,17 @@ function object() {
 	alert(person[key]);
 }
 
+function Ben() {
+
+	Ben = {
+		ig: "ben.liiiii",
+		"field of study":"CE",
+		goal: "to travel the world with a family & for a living"
+	}
+
+	alert("Ben is a photographer. His ig handle is "+Ben.ig+" and he studies "+Ben["field of study"]+" with the goal of "+Ben.goal);
+}
+
 
 //......................................Shopping Cart Object
 
@@ -44,7 +55,7 @@ function grocery() {
 		orange: q2,
 		chips: q3
 	};
-	alert(cart.chips + " chips");
+	alert(cart.chips + " chips"); //displays number of "chips" (property) bought
 }
 
 
@@ -113,5 +124,6 @@ function deepClone() {
 	
 
 //.........FUNCTIONS TO EXECUTE
-
+clone();
+Ben();
 	//clone()

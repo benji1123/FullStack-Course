@@ -1,3 +1,9 @@
+
+
+// (A) JS Arrays can store arrays as their elements (see "people" array)
+// (B) Below are assorted array functions: splicing, sorting,  
+
+
 let people = [
 	{first:'Galileo', year: 1564},
 	{first:'da Vinci', year: 1452},
@@ -25,11 +31,14 @@ function filter() {
 
 
 
-//map array for first name
+//map array for first name 
+// (A) "Mapping" ==> create new array & populate with result of calling a function for every original array element
+// (B) Said "function" in this case to splice the *first name* ($ perons.first)
+// (C) New array is created of just the people's *first names*
 
 function map() {
 
-	const names = people.map(person => `${person.first}`);
+	const names = people.map(person => `${person.first}`); // (B) arrow function
 	console.log(names);
 
 
@@ -38,23 +47,34 @@ function map() {
 
 
 // sort people by age
-
+// (A) instantiate new array "order"
+// (B) apply the "sort" funtion to the "people" array
+//  
 function order() {
 
 	const order = people.sort((a, b) => a.year > b.year ? 1 : -1); 
+
+	// "?" = Ternary Operator ==> 
 		
-		/* above arrow/ternanry syntax is equivalent to below
+		/* ternanry syntax is equivalent to below
 		if(a.year > b.year){
-			return 1;
+			return 1; 
 		} else {
-			return -1;
+			return -1; 
 		} */
+
+	// array.sort operates strangely for #s (e.g. 21 is bigger than 100 because 2 > 1)
+	// thus a "compare function" (ternary expression) is written to order in ascension
+
 
 	console.table(order)
 }
 	
 
-// conduct running total with Array.reduce 
+// get the sum of all the birth-years in the array
+
+// array.reduce() reduces the "people" array to a single value (the sum we want)
+// the return value is an "accumulator"
 
 function reduce() {
 
@@ -66,19 +86,5 @@ function reduce() {
 }
 
 
-
-//take and sort entities from online
-
-function streets() {
-
-	const category = document.querySelector
-
-
-
-}
-
-
-filter();
-map();
-order();
+// FUNCITONS TO RUN .............
 reduce();
