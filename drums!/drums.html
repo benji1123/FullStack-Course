@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Web Drums</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+	<!--KEYBOARD_CONNECTED BUTTONS : ASDFGHJKL!-->
+
+	<div class="keys">
+		<!--"data-key" is a custom parameter (equivalent to class="__")-->
+		<div data-key="65" class="key"> 
+			<kbd>A</kbd>
+			<span class="sound">clap</span>
+		</div>
+
+		<div data-key="83" class="key"> 
+			<kbd>S</kbd>
+			<span class="sound">hihat</span>
+		</div>
+		
+		<div data-key="68" class="key"> 
+			<kbd>D</kbd>
+			<span class="sound">kick</span>
+		</div>
+		
+		<div data-key="70" class="key">
+			<kbd>F</kbd>
+			<span class="sound">hat</span>
+		</div>
+		
+		<div data-key="71" class="key"> 
+			<kbd>G</kbd>
+			<span class="sound">boom</span>
+		</div>
+		
+		<div data-key="72" class="key"> 
+			<kbd>H</kbd>
+			<span class="sound">ride</span>
+		</div>
+		
+		<div data-key="74" class="key"> 
+			<kbd>J</kbd>
+			<span class="sound">snare</span> 
+		</div>
+		
+		<div data-key="75" class="key"> 
+			<kbd>K</kbd>
+			<span class="sound">tom</span>
+		</div>
+		
+		<div data-key="76" class="key"> 
+			<kbd>L</kbd>
+			<span class="sound">tink</span>
+		</div>
+
+
+		<!--SOUNDS TO PLAY-->
+		<!--AUDIO: https://archive.org/details/futuresoundfx-98/futuresoundfx-22.mp3-->
+		<audio data-key="65" src="sounds/soundA.mp3"></audio>	
+		<audio data-key="83" src="sounds/soundS.mp3"></audio>	
+		<audio data-key="68" src="sounds/soundD.mp3"></audio>	
+		<audio data-key="70" src="sounds/soundF.mp3"></audio>	
+		<audio data-key="71" src="sounds/soundG.mp3"></audio>	
+		<audio data-key="72" src="sounds/soundH.mp3"></audio>
+		<audio data-key="74" src="sounds/soundJ.mp3"></audio>	
+		<audio data-key="75" src="sounds/soundK.mp3"></audio>		
+		<audio data-key="76" src="sounds/soundL.mp3"></audio>	
+		<audio src="forest.mp3" id="background"></audio>
+
+
+	</div>
+
+<script>
+
+	//set ambiant backogrund forest noise
+	var backNoise = document.getElementById("background");
+	backNoise.volume = 0.15;
+	backNoise.play();
+	
+	//create process that occurs on keydown event
+	window.addEventListener('keydown', function(e) {
+		console.log(e.keyCode); //log keyCode of pressed keys in console
+
+		//DETECT audio element from keyCode of pressed key
+		const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
+		const key = document.querySelector(`.key[data-key="${e.keyCode}"]`);
+
+		//LOG pressed key & attached audio element
+		console.log(audio); 
+		console.log(key)
+
+		if(!audio) return; //stop processing if no audio exists for pressed key
+
+		//PLAY audio 
+		audio.currentTime = 0; //reset audio on keypressg
+		audio.play();  
+
+		key.classList.add('playing'); 
+	});
+
+
+	// RESET KEY AESTHETIC
+
+	function removeTransition(e) {
+		if(e.propertyName !== 'transform') return;
+		console.log(e.propertyName); //fact: "transform" is logged only after it ends
+		console.log(this); //"this" refers "key" ~ what this function was called by (see line 105)
+		this.classList.remove('playing'); //get rid of styling
+	}
+
+	//Revert styling after css-transition ends
+	const keys = document.querySelectorAll('.key');
+	keys.forEach(key => key.addEventListener('transitionend', removeTransition));
+
+
+</script>
+
+</body>
+</html>

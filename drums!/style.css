@@ -1,0 +1,52 @@
+
+html{
+	background: url(https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-340949.jpg) bottom center;
+	background-size: cover; /*good for all window-sizes*/
+}
+
+.keys{
+
+	display: flex;
+	flex: 1;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+
+}
+
+/*can I create a color gradient automatically?*/
+
+.key {
+	border: .4rem solid white;
+	border-radius: .5rem;
+	margin: 1rem;
+	font-size: 1.5rem;
+	font-family: Helvetica;
+	padding: 1rem 0.5rem;
+	transition: all 0.2s; 
+	width: 10rem;
+	text-align: center;
+	background: #66ffcc;
+	color: black;
+	text-shadow: 0 0 5px black;
+	opacity: 0.6;
+}
+
+kbd{
+	display: block;
+	font-size: 4rem;
+}
+
+.sound{
+	font-size: 0.8rem;
+	text-transform: uppercase;
+	letter-spacing: .1rem;
+
+}
+
+.playing {
+	transform:scale(1.2);
+	border-color: blue;
+	box-shadow: 0 0 10px #ffc600;
+	background: blue;
+}
